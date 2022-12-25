@@ -1,0 +1,9 @@
+{
+  "required": true,
+  "package": "com.rikarin.electrocraft.mixins",
+  "compatibilityLevel": "JAVA_${java}",
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "mixins": []
+}

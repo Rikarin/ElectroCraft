@@ -1,0 +1,38 @@
+{
+  "itemGroup.electrocraft.tools": "Tools",
+  "itemGroup.electrocraft.plates": "Plates",
+  "itemGroup.electrocraft.cables": "Cables",
+  "itemGroup.electrocraft.machines": "Machines",
+
+  "item.electrocraft.tool.wrench": "Wrench",
+  "item.electrocraft.tool.cutter": "Cutter",
+  "item.electrocraft.tool.hammer": "Hammer",
+
+  "item.electrocraft.plate.copper": "Copper Plate",
+  "item.electrocraft.plate.bronze": "Bronze Plate",
+  "item.electrocraft.plate.iron": "Iron Plate",
+  "item.electrocraft.plate.gold": "Gold Plate",
+  "item.electrocraft.plate.lapis": "Lapis Plate",
+  "item.electrocraft.plate.lead": "Lead Plate",
+  "item.electrocraft.plate.obsidian": "Obsidian Plate",
+  "item.electrocraft.plate.steel": "Steel Plate",
+  "item.electrocraft.plate.tin": "Tin Plate",
+  "item.electrocraft.plate.dense_copper": "Dense Copper Plate",
+  "item.electrocraft.plate.dense_bronze": "Dense Bronze Plate",
+  "item.electrocraft.plate.dense_iron": "Dense Iron Plate",
+  "item.electrocraft.plate.dense_gold": "Dense Gold Plate",
+  "item.electrocraft.plate.dense_lapis": "Dense Lapis Plate",
+  "item.electrocraft.plate.dense_lead": "Dense Lead Plate",
+  "item.electrocraft.plate.dense_obsidian": "Dense Obsidian Plate",
+  "item.electrocraft.plate.dense_steel": "Dense Steel Plate",
+  "item.electrocraft.plate.dense_tin": "Dense Tin Plate",
+
+  "item.electrocraft.crafting.rubber": "Rubber",
+  "item.electrocraft.cable.copper_0": "Uninsulated Copper Cable",
+  "item.electrocraft.cable.copper_1": "Insulated Copper Cable",
+
+  "block.electrocraft.machine_casing": "Machine Casing",
+  "block.electrocraft.advanced_machine_casing": "Advanced Machine Casing",
+
+  "block.electrocraft.insightful_crystal": "Insightful Crystal"
+}

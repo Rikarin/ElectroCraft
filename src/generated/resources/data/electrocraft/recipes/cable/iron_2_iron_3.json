@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "electrocraft:cable/iron_2"
+    },
+    {
+      "item": "electrocraft:rubber"
+    }
+  ],
+  "result": {
+    "item": "electrocraft:cable/iron_3"
+  }
+}

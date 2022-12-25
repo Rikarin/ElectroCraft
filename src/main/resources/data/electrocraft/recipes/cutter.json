@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "P P",
+    " P ",
+    "I I"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "item": "electrocraft:plate/iron"
+    }
+  },
+  "result": {
+    "item": "electrocraft:tool/cutter"
+  }
+}
