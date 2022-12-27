@@ -1,13 +1,10 @@
 package com.rikarin.electrocraft.items
 
-import com.rikarin.electrocraft.CUTTER_TOOL
 import com.rikarin.electrocraft.MOD_ID
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.data.client.BlockStateModelGenerator
 import net.minecraft.data.client.ItemModelGenerator
 import net.minecraft.data.client.Models
@@ -16,20 +13,14 @@ import net.minecraft.data.server.recipe.RecipeProvider
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder
 import net.minecraft.item.Item
 import net.minecraft.item.ItemConvertible
-import net.minecraft.item.ItemStack
+import net.minecraft.item.ItemGroup
 import net.minecraft.recipe.book.RecipeCategory
-import net.minecraft.registry.Registries
-import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
 import java.util.function.Consumer
 
 
-private val CABLE_GROUP = FabricItemGroup.builder(Identifier(MOD_ID, "cables"))
-    .icon{ ItemStack(Cable.IRON_3) }
-    .build()
-
-
-val RUBBER = Item(FabricItemSettings())
+val CABLE_GROUP: ItemGroup = registerGroup("cables") { Cable.IRON_3 }
+val RUBBER = registerItem(Item(FabricItemSettings()), "crafting/rubber", CABLE_GROUP)
 
 enum class Cable : ItemConvertible {
     COPPER_0, COPPER_1,
@@ -39,21 +30,9 @@ enum class Cable : ItemConvertible {
 
     val item = Item(FabricItemSettings())
     val itemName = this.toString().lowercase()
-    val identifier = Identifier(MOD_ID, "cable/$itemName")
+//    val identifier = Identifier(MOD_ID, "cable/$itemName")
 
     override fun asItem() = item
-}
-
-fun registerCableItems() {
-    val group = ItemGroupEvents.modifyEntriesEvent(CABLE_GROUP)
-
-    Registry.register(Registries.ITEM, Identifier(MOD_ID, "crafting/rubber"), RUBBER)
-    group.register { x -> x.add(RUBBER) }
-
-    Cable.values().forEach {
-        Registry.register(Registries.ITEM, it.identifier, it.item)
-        group.register { x -> x.add(it) }
-    }
 }
 
 class CableItemGenerator(output: FabricDataOutput) : FabricModelProvider(output) {

@@ -5,28 +5,19 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
 import net.minecraft.data.client.BlockStateModelGenerator
 import net.minecraft.data.client.ItemModelGenerator
 import net.minecraft.data.client.Models
 import net.minecraft.data.server.recipe.RecipeJsonProvider
 import net.minecraft.data.server.recipe.RecipeProvider
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder
-import net.minecraft.item.Item
-import net.minecraft.item.ItemConvertible
-import net.minecraft.item.ItemStack
-import net.minecraft.item.Items
+import net.minecraft.item.*
 import net.minecraft.recipe.book.RecipeCategory
-import net.minecraft.registry.Registries
-import net.minecraft.registry.Registry
 import net.minecraft.util.Identifier
 import java.util.function.Consumer
 
 
-private val PLATE_GROUP = FabricItemGroup.builder(Identifier(MOD_ID, "plates"))
-    .icon{ ItemStack(Plate.IRON) }
-    .build()
+val PLATE_GROUP: ItemGroup = registerGroup("plates") { Plate.IRON }
 
 enum class Plate : ItemConvertible {
     COPPER, BRONZE, IRON, GOLD, LAPIS, LEAD, OBSIDIAN, STEEL, TIN,
@@ -34,18 +25,9 @@ enum class Plate : ItemConvertible {
 
     val item = Item(FabricItemSettings())
     val itemName = this.toString().lowercase()
-    val identifier = Identifier(MOD_ID, "plate/$itemName")
+//    val identifier = Identifier(MOD_ID, "plate/$itemName")
 
     override fun asItem() = item
-}
-
-fun registerPlateItems() {
-    val group = ItemGroupEvents.modifyEntriesEvent(PLATE_GROUP)
-
-    Plate.values().forEach {
-        Registry.register(Registries.ITEM, it.identifier, it.item)
-        group.register { x -> x.add(it) }
-    }
 }
 
 class PlateItemGenerator(output: FabricDataOutput) : FabricModelProvider(output) {
