@@ -16,9 +16,6 @@ import net.minecraft.recipe.book.RecipeCategory
 import net.minecraft.util.Identifier
 import java.util.function.Consumer
 
-
-val PLATE_GROUP: ItemGroup = registerGroup("plates") { Plate.IRON }
-
 enum class Plate : ItemConvertible {
     COPPER, BRONZE, IRON, GOLD, LAPIS, LEAD, OBSIDIAN, STEEL, TIN,
     DENSE_COPPER, DENSE_BRONZE, DENSE_IRON, DENSE_GOLD, DENSE_LAPIS, DENSE_LEAD, DENSE_OBSIDIAN, DENSE_STEEL, DENSE_TIN;

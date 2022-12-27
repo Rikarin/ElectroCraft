@@ -1,5 +1,6 @@
 package com.rikarin.electrocraft
 
+import com.rikarin.electrocraft.block.ModBlocks
 import com.rikarin.electrocraft.items.*
 
 import net.fabricmc.api.ModInitializer
@@ -12,6 +13,7 @@ const val MOD_ID = "electrocraft"
 object Main : ModInitializer {
     override fun onInitialize() {
         ModItems.registerItems()
+        ModBlocks.registerBlocks()
 
         // This is used to create dynamic cell
 //        val fluids = Registries.FLUID.stream().collect(Collectors.toList())

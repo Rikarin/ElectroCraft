@@ -1,19 +1,19 @@
-// 1.19.3	2022-12-23T11:02:06.922556	ElectroCraft/Plate Item Generator
+// 1.19.3	2022-12-27T02:16:41.894251	ElectroCraft/Plate Item Generator
 3eff90ef4332c701a99399abff033cbe156f4cf7 assets/electrocraft/models/item/plate/steel.json
 a78e86eccd9bbb78db5a1a487570904dbc0f4100 assets/electrocraft/models/item/plate/dense_lead.json
 5cc8d05e6ab328dbe47fafe279ce3e20a4ac02bc assets/electrocraft/models/item/plate/copper.json
 c92f424178fd562f9ef798c158bd0643632107ad assets/electrocraft/models/item/plate/gold.json
-5994adaef6c3861644608c8aec21a09326332859 assets/electrocraft/models/item/plate/dense_bronze.json
 54e90254108baa95a0c19c258e521a09d2ace0c4 assets/electrocraft/models/item/plate/dense_copper.json
+5994adaef6c3861644608c8aec21a09326332859 assets/electrocraft/models/item/plate/dense_bronze.json
 f7ae42d1c10466cf7c341d3a349f978894ab7fa8 assets/electrocraft/models/item/plate/dense_gold.json
 9ab4b40dc8e6cd4358ecd7c210acb95a71c706c4 assets/electrocraft/models/item/plate/bronze.json
 cb8aae7ddc1691cd98a4e49962c34baae1379086 assets/electrocraft/models/item/plate/dense_obsidian.json
 a1e0896eff3cb8358e6e256810ec400c68bb5f65 assets/electrocraft/models/item/plate/lapis.json
 adcea5a20fba4d77b04b1efb664b5e5997cdc15b assets/electrocraft/models/item/plate/tin.json
 1c326405e7ed5a629add2d2d3a050c14db039abb assets/electrocraft/models/item/plate/dense_steel.json
-a67c293f686d8ada8c393825d6876233fc1438cb assets/electrocraft/models/item/plate/dense_tin.json
 48157fc8c8bdb29a48b554b623b7cc013c4eaad9 assets/electrocraft/models/item/plate/obsidian.json
+a67c293f686d8ada8c393825d6876233fc1438cb assets/electrocraft/models/item/plate/dense_tin.json
 b0babbf35f333623a78065f126dcd854cfdca86e assets/electrocraft/models/item/plate/dense_lapis.json
-cf92f232f76eb29b0b6ac181f30d5c451657a17a assets/electrocraft/models/item/plate/dense_iron.json
 def7e8b49971cd4522768b2d6d5546fea8e876f7 assets/electrocraft/models/item/plate/iron.json
+cf92f232f76eb29b0b6ac181f30d5c451657a17a assets/electrocraft/models/item/plate/dense_iron.json
 6425c4bbd23809239c2a927a5ce4f932bf0add80 assets/electrocraft/models/item/plate/lead.json

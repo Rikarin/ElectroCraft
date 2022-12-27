@@ -9,8 +9,6 @@ import net.minecraft.util.Hand
 import net.minecraft.util.TypedActionResult
 import net.minecraft.world.World
 
-val INSIGHTFUL_CRYSTAL = registerItem(InsightfulCrystal(), "insightful_crystal", TOOLS_GROUP)
-
 class InsightfulCrystal : Item(FabricItemSettings().maxDamage(500)) {
     override fun use(world: World, user: PlayerEntity, hand: Hand): TypedActionResult<ItemStack> {
         val stack = user.getStackInHand(hand)

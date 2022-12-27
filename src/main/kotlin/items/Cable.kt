@@ -13,14 +13,10 @@ import net.minecraft.data.server.recipe.RecipeProvider
 import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder
 import net.minecraft.item.Item
 import net.minecraft.item.ItemConvertible
-import net.minecraft.item.ItemGroup
 import net.minecraft.recipe.book.RecipeCategory
 import net.minecraft.util.Identifier
 import java.util.function.Consumer
 
-
-val CABLE_GROUP: ItemGroup = registerGroup("cables") { Cable.IRON_3 }
-val RUBBER = registerItem(Item(FabricItemSettings()), "crafting/rubber", CABLE_GROUP)
 
 enum class Cable : ItemConvertible {
     COPPER_0, COPPER_1,
