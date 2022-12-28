@@ -7,7 +7,7 @@ import net.minecraft.util.math.BlockPos
 import net.minecraft.util.math.Direction
 import net.minecraft.world.World
 
-class WrenchTool(settings: Settings) : ToolItem(settings), ToolHandler {
+class WrenchModTool(settings: Settings) : ModToolItem(ModToolMaterials.BASIC, settings), ToolHandler {
     override fun handleTool(
         stack: ItemStack,
         pos: BlockPos,
@@ -17,9 +17,9 @@ class WrenchTool(settings: Settings) : ToolItem(settings), ToolHandler {
         damage: Boolean
     ): Boolean {
         if (!player.world.isClient && damage) {
-            stack.damage(1, player.world.random, player as ServerPlayerEntity);
+            stack.damage(1, player.world.random, player as ServerPlayerEntity)
         }
 
-        return true;
+        return true
     }
 }
