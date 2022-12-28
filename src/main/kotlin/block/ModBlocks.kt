@@ -1,10 +1,10 @@
 package com.rikarin.electrocraft.block
 
 import com.rikarin.electrocraft.MOD_ID
-import com.rikarin.electrocraft.items.InsightfulCrystal
-import com.rikarin.electrocraft.items.TOOLS_GROUP
-import com.rikarin.electrocraft.items.registerGroup
-import com.rikarin.electrocraft.items.registerItem
+import com.rikarin.electrocraft.item.InsightfulCrystal
+import com.rikarin.electrocraft.item.TOOLS_GROUP
+import com.rikarin.electrocraft.item.registerGroup
+import com.rikarin.electrocraft.item.registerItem
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.block.Block
 import net.minecraft.item.BlockItem

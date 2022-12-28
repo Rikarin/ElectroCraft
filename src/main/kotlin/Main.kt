@@ -1,7 +1,7 @@
 package com.rikarin.electrocraft
 
 import com.rikarin.electrocraft.block.ModBlocks
-import com.rikarin.electrocraft.items.*
+import com.rikarin.electrocraft.item.*
 
 import net.fabricmc.api.ModInitializer
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint

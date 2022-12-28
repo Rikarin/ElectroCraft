@@ -1,4 +1,4 @@
-package com.rikarin.electrocraft.items.tools
+package com.rikarin.electrocraft.item.tools
 
 import net.minecraft.item.Item
 import net.minecraft.item.ItemStack

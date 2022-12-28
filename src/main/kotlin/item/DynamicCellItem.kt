@@ -1,4 +1,4 @@
-package com.rikarin.electrocraft.items
+package com.rikarin.electrocraft.item
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.minecraft.block.FluidDrainable

@@ -1,4 +1,4 @@
-package com.rikarin.electrocraft.items.plate
+package com.rikarin.electrocraft.item.plate
 
 
 //val PLATE_RECIPE_SERIALIZER = Registry.register(Registries.RECIPE_SERIALIZER, Identifier(MOD_ID, "crafting_plates"), DynamicPlateRecipeSerializer())

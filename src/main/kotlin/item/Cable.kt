@@ -1,4 +1,4 @@
-package com.rikarin.electrocraft.items
+package com.rikarin.electrocraft.item
 
 import com.rikarin.electrocraft.MOD_ID
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput

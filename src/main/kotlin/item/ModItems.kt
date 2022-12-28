@@ -1,9 +1,9 @@
-package com.rikarin.electrocraft.items
+package com.rikarin.electrocraft.item
 
 import com.rikarin.electrocraft.MOD_ID
-import com.rikarin.electrocraft.items.tools.CutterTool
-import com.rikarin.electrocraft.items.tools.HammerTool
-import com.rikarin.electrocraft.items.tools.WrenchTool
+import com.rikarin.electrocraft.item.tools.CutterTool
+import com.rikarin.electrocraft.item.tools.HammerTool
+import com.rikarin.electrocraft.item.tools.WrenchTool
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents
