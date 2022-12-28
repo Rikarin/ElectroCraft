@@ -1,7 +1,7 @@
 package com.rikarin.electrocraft.block
 
 import com.rikarin.electrocraft.MOD_ID
-import com.rikarin.electrocraft.item.InsightfulCrystal
+import com.rikarin.electrocraft.item.InsightfulCrystalItem
 import com.rikarin.electrocraft.item.TOOLS_GROUP
 import com.rikarin.electrocraft.item.registerGroup
 import com.rikarin.electrocraft.item.registerItem
@@ -22,7 +22,7 @@ val MACHINE_CASING_ITEM = registerBlockItem(MACHINE_CASING, "machine_casing", MA
 val ADVANCED_MACHINE_CASING = registerBlock(MachineCasing(), "advanced_machine_casing")
 val ADVANCED_MACHINE_CASING_ITEM = registerBlockItem(ADVANCED_MACHINE_CASING, "advanced_machine_casing", MACHINES_GROUP)
 
-val INSIGHTFUL_CRYSTALtest = registerItem(InsightfulCrystal(), "insightful_crystal_test", TOOLS_GROUP)
+val INSIGHTFUL_CRYSTALtest = registerItem(InsightfulCrystalItem(), "insightful_crystal_test", TOOLS_GROUP)
 
 class ModBlocks {
     companion object {

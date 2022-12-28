@@ -19,13 +19,19 @@
     "fabric-datagen": [
       {
         "adapter": "kotlin",
-        "value": "com.rikarin.electrocraft.DataGeneration"
+        "value": "com.rikarin.electrocraft.ElectroCraftDataGeneration"
       }
     ],
     "main": [
       {
         "adapter": "kotlin",
-        "value": "com.rikarin.electrocraft.Main"
+        "value": "com.rikarin.electrocraft.ElectroCraftMod"
+      }
+    ],
+    "client": [
+      {
+        "adapter": "kotlin",
+        "value": "com.rikarin.electrocraft.ElectroCraftModClient"
       }
     ]
   },

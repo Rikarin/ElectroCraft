@@ -26,7 +26,7 @@ val CUTTER_TOOL = registerItem(CutterTool(FabricItemSettings()), "tool/cutter", 
 val HAMMER_TOOL = registerItem(HammerTool(FabricItemSettings()), "tool/hammer", TOOLS_GROUP)
 val NANO_MINER = registerItem(NanoMinerItem(), "tool/nano_miner", TOOLS_GROUP)
 
-val INSIGHTFUL_CRYSTAL = registerItem(InsightfulCrystal(), "insightful_crystal", TOOLS_GROUP)
+val INSIGHTFUL_CRYSTAL = registerItem(InsightfulCrystalItem(), "insightful_crystal", TOOLS_GROUP)
 val RUBBER = registerItem(Item(FabricItemSettings()), "crafting/rubber", CABLE_GROUP)
 
 class ModItems {
@@ -61,3 +61,12 @@ fun registerGroup(name: String, item: Supplier<ItemConvertible>): ItemGroup {
         .icon { ItemStack(item.get()) }
         .build()
 }
+
+
+// This is used to create dynamic cell
+//        val fluids = Registries.FLUID.stream().collect(Collectors.toList())
+//        for (fluid in fluids) {
+//            if (fluid.isStill(fluid.defaultState)) {
+//                println("foo bar $fluid")
+//            }
+//        }

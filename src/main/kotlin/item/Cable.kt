@@ -26,10 +26,10 @@ enum class Cable : ItemConvertible {
 
     val item = Item(FabricItemSettings())
     val itemName = this.toString().lowercase()
-//    val identifier = Identifier(MOD_ID, "cable/$itemName")
 
     override fun asItem() = item
 }
+
 
 class CableItemGenerator(output: FabricDataOutput) : FabricModelProvider(output) {
     override fun getName() = "Cable Item Generator"

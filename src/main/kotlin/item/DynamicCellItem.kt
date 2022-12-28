@@ -22,12 +22,12 @@ import net.minecraft.world.World
 import net.minecraft.world.WorldAccess
 import net.minecraft.world.event.GameEvent
 
+// TODO: merge this into DynamicCellItem
 enum class Cell(fluid: Fluid) : ItemConvertible {
     EMPTY(Fluids.EMPTY), WATER(Fluids.WATER), LAVA(Fluids.LAVA);
 
     val item = DynamicCellItem(fluid)
     val itemName = this.toString().lowercase()
-//    val identifier = Identifier(MOD_ID, "cell/$itemName")
 
     val defaultStack get() = item.defaultStack
     override fun asItem() = item
