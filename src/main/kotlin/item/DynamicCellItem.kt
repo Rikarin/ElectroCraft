@@ -27,7 +27,7 @@ enum class Cell(fluid: Fluid) : ItemConvertible {
     EMPTY(Fluids.EMPTY), WATER(Fluids.WATER), LAVA(Fluids.LAVA);
 
     val item = DynamicCellItem(fluid)
-    val itemName = this.toString().lowercase()
+    val itemName = "cell/${toString().lowercase()}"
 
     val defaultStack get() = item.defaultStack
     override fun asItem() = item

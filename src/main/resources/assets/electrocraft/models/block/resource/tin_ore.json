@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "electrocraft:block/resource/tin_ore"
+  }
+}

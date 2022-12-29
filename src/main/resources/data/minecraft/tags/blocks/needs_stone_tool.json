@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "electrocraft:resource/tin_ore",
+    "electrocraft:resource/tin_block"
+  ]
+}

@@ -7,7 +7,7 @@ import net.minecraft.util.math.BlockPos
 import net.minecraft.util.math.Direction
 import net.minecraft.world.World
 
-class WrenchModTool(settings: Settings) : ModToolItem(ModToolMaterials.BASIC, settings), ToolHandler {
+class WrenchToolItem(settings: Settings) : ModToolItem(ModToolMaterials.BASIC, settings), ToolHandler {
     override fun handleTool(
         stack: ItemStack,
         pos: BlockPos,

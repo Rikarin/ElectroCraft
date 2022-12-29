@@ -4,101 +4,49 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2975dd71-9dba-4c12-bdb0-af6c712dabd1" name="Changes" comment="feat: add Nano Miner tool">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ElectroCraftDataGeneration.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ElectroCraftModClient.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/item/tools/CutterTool.kt" afterDir="false" />
+    <list default="true" id="2975dd71-9dba-4c12-bdb0-af6c712dabd1" name="Changes" comment="refactor: small improvements">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/block/MachineCasingBlock.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generator/CableItemGenerator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generator/CableRecipeGenerator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generator/PlateItemGenerator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/generator/PlateRecipeGenerator.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/item/CableItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/item/IngotItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/item/PlateItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/item/RawItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/item/tools/CutterTooItem.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/blockstates/resource/tin_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/blockstates/resource/tin_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/models/block/resource/tin_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/models/block/resource/tin_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/models/item/resource/raw_tin.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/models/item/resource/tin_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/models/item/resource/tin_ingot.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/models/item/resource/tin_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/electrocraft/loot_tables/blocks/resource/tin_block.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/electrocraft/loot_tables/blocks/resource/tin_ore.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/axe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/hoe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable/shovel.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/needs_diamond_tool.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/needs_iron_tool.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/needs_stone_tool.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/39fce51c163711e4770140b4018d1bf81e1b4393" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/4ac215bbe190250dc7ab27b86dc8853ae74514f4" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/4bca9270972ec52fcae0732ca1c5a2ea0a738e78" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/.cache/5f896c1308b25ccfc9c6adb92456d970ca112c02" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/copper_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/copper_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/gold_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/gold_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/gold_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/iron_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/iron_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/iron_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/iron_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/tin_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/cable/tin_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/bronze.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/copper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/dense_bronze.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/dense_copper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/dense_gold.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/dense_iron.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/dense_lapis.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/dense_lead.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/dense_obsidian.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/dense_steel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/dense_tin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/gold.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/iron.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/lapis.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/lead.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/obsidian.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/steel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/assets/electrocraft/models/item/plate/tin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/cable/copper_0_copper_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/cable/gold_0_gold_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/cable/gold_1_gold_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/cable/iron_0_iron_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/cable/iron_1_iron_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/cable/iron_2_iron_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/cable/tin_0_tin_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/copper_ingot_copper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/gold_ingot_gold.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/iron_ingot_iron.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/bronze_dense_bronze.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/copper_copper_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/copper_dense_copper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/gold_dense_gold.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/gold_gold_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/iron_dense_iron.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/iron_iron_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/lapis_dense_lapis.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/lead_dense_lead.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/obsidian_dense_obsidian.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/steel_dense_steel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/tin_dense_tin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/advancements/recipes/misc/plate/tin_tin_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/cable/copper_0_copper_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/cable/gold_0_gold_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/cable/gold_1_gold_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/cable/iron_0_iron_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/cable/iron_1_iron_2.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/cable/iron_2_iron_3.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/cable/tin_0_tin_1.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/copper_ingot_copper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/gold_ingot_gold.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/iron_ingot_iron.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/bronze_dense_bronze.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/copper_copper_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/copper_dense_copper.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/gold_dense_gold.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/gold_gold_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/iron_dense_iron.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/iron_iron_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/lapis_dense_lapis.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/lead_dense_lead.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/obsidian_dense_obsidian.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/steel_dense_steel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/tin_dense_tin.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/generated/resources/data/electrocraft/recipes/plate/tin_tin_0.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ElectroCraftMod.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/ElectroCraftDataGeneration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/ElectroCraftDataGeneration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/block/MachineCasing.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/block/ModBlocks.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/block/ModBlocks.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/Cable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/item/Cable.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/Cable.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/DynamicCellItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/item/DynamicCellItem.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/InsightfulCrystal.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/item/InsightfulCrystalItem.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/ModItems.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/item/ModItems.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/plate/Plates_backup_serializer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/old/Plates_backup_serializer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/Plate.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/tools/CutterTool.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/tools/HammerTool.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/item/tools/HammerTool.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/tools/NanoMinerItem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/item/tools/NanoMinerItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/tools/ModToolMaterials.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/item/tools/ModToolMaterials.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/item/tools/WrenchModTool.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/item/tools/WrenchToolItem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/electrocraft/lang/en_us.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/fabric.mod.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,6 +110,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JVZ1NaGi2whTEOp7AWRLqIuXrK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -172,6 +123,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/jiu/Projects/ElectoCraft/src/main/resources/assets/electrocraft/models/item/resource",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -184,9 +136,26 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/electrocraft/models/item/resource" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks/mineable" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data/minecraft/tags/blocks" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/electrocraft/models/item/ore" />
+      <recent name="$PROJECT_DIR$/src/main/resources/assets/electrocraft/models/block/ore" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/data/electrocraft/loot_tables/blocks/ore" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data/electrocraft/loot_tables/blocks" />
+      <recent name="$PROJECT_DIR$/src/main/resources/data/electrocraft/loot_tables" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/old" />
       <recent name="$PROJECT_DIR$/run/mods" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="generator" />
+      <recent name="com.rikarin.electrocraft.item" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="item" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.ElectoCraft [runClient]">
@@ -249,7 +218,7 @@
       <updated>1672164995741</updated>
       <workItem from="1672164996848" duration="101000" />
       <workItem from="1672165104764" duration="3435000" />
-      <workItem from="1672225755834" duration="10964000" />
+      <workItem from="1672225755834" duration="16130000" />
     </task>
     <task id="LOCAL-00001" summary="fix: file naming">
       <created>1672225774222</created>
@@ -265,7 +234,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672231893171</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="refactor: small improvements">
+      <created>1672268269719</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672268269719</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +250,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: file naming" />
     <MESSAGE value="feat: add Nano Miner tool" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add Nano Miner tool" />
+    <MESSAGE value="refactor: small improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: small improvements" />
   </component>
 </project>

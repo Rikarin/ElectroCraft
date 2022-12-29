@@ -9,6 +9,7 @@ enum class ModToolMaterials(
     private val attackDamage: Float,
     private val enchantability: Int
 ) : ToolMaterial {
+    // Used for Hammer, Cutter and Wrench
     BASIC(0, 0, 0f, 0f, 0),
     NANO(4, 0, 20f, 9.0f, 0);
 

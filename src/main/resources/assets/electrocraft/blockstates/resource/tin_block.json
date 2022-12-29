@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "electrocraft:block/resource/tin_block" }
+  }
+}
